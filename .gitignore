@@ -1,0 +1,19 @@
+# Terraform state — never commit
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Actual vars with real project_id — use terraform.tfvars.example instead
+terraform.tfvars
+
+# Binary plan file — the JSON evidence in evidence/plan.json is what we commit
+tfplan
+
+# Provider cache and working directory
+.terraform/
+.terraform.lock.hcl
+
+# OS / editor noise
+.DS_Store
+*.swp
+*.swo

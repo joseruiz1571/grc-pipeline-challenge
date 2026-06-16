@@ -1,0 +1,6 @@
+# Copy this file to terraform.tfvars and edit.
+# Find your GCP project ID: gcloud config get-value project
+project_id   = "your-gcp-project-id"
+project_name = "grc-challenge"
+environment  = "dev"
+location     = "US"
