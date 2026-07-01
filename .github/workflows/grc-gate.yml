@@ -1,0 +1,49 @@
+# grc-gate: run the GCP compliance policy gate on every pull request to main.
+# Three Rego namespaces enforced: SC-28 (encryption), AC-3 (public access), CM-6 (labels).
+# Evidence is uploaded as a build artifact on every run, pass or fail.
+name: grc-gate
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  grc-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Conftest
+        env:
+          CONFTEST_VERSION: "0.57.0"
+        run: |
+          curl -fsSL \
+            "https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/conftest_${CONFTEST_VERSION}_Linux_x86_64.tar.gz" \
+            | tar xzf - conftest
+          sudo mv conftest /usr/local/bin/
+          conftest --version
+
+      - name: Run policy gate
+        run: |
+          mkdir -p evidence
+          conftest test week-1/evidence/plan.json \
+            --policy week-2/policies \
+            --namespace compliance.ac3_gcp \
+            --namespace compliance.cm6_gcp \
+            --namespace compliance.sc28_gcp \
+            --output json > evidence/conftest-results.json
+          GATE_EXIT=$?
+          cat evidence/conftest-results.json
+          exit $GATE_EXIT
+
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: conftest-evidence
+          path: evidence/
