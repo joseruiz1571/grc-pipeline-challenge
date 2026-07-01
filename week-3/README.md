@@ -39,44 +39,11 @@ Conftest exits non-zero. The `Run policy gate` step fails. The `grc-gate` check 
 
 ## The two-PR demonstration
 
-### Green PR — compliant plan passes
+Both PRs are in the repo's history.
 
-The existing `week-1/evidence/plan.json` is fully compliant. Use it as-is.
+**[PR #1 — green](https://github.com/joseruiz1571/grc-pipeline-challenge/pull/1):** compliant `plan.json`, all three namespaces pass, merged to main.
 
-```bash
-# From the repo root
-git checkout -b week-3/green-pr
-# No changes needed — the compliant plan.json already satisfies all three namespaces
-git add .github/workflows/grc-gate.yml week-3/README.md README.md
-git commit -m "Week 3: add grc-gate CI workflow"
-git push -u origin week-3/green-pr
-# Open a pull request → the grc-gate check goes green → merge
-```
-
-### Red PR — breaking plan gets blocked
-
-Flip `public_access_prevention` from `"enforced"` to `"inherited"` in `week-1/evidence/plan.json` to violate AC-3.
-
-```bash
-git checkout -b week-3/red-pr
-# Edit week-1/evidence/plan.json:
-# Find every: "public_access_prevention":"enforced"
-# Change to:  "public_access_prevention":"inherited"
-# (two occurrences — primary bucket and log bucket)
-git add week-1/evidence/plan.json
-git commit -m "test: break AC-3 to demonstrate gate blocks merge"
-git push -u origin week-3/red-pr
-# Open a pull request → the grc-gate check goes red → merge is blocked
-```
-
-### Enable branch protection
-
-Settings > Branches > Add rule for `main`:
-- Check "Require status checks to pass before merging"
-- Search for and add `grc-gate`
-- Save
-
-The red PR cannot be merged by anyone until the violation is fixed.
+**[PR #2 — red](https://github.com/joseruiz1571/grc-pipeline-challenge/pull/2):** `public_access_prevention` flipped from `enforced` to `inherited` on both buckets. AC-3 reports two violations, `grc-gate` fails, merge is blocked by branch protection. The PR cannot be merged until the control is restored.
 
 ## Files
 
