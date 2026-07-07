@@ -11,7 +11,7 @@ This is the [GRC Engineering Club](https://www.grcengclub.com/) pipeline challen
 | [Week 1](week-1/) | Compliant Cloud Storage — 5 NIST 800-53 controls in Terraform | Complete |
 | [Week 2](week-2/) | Policy-as-code — SC-28, AC-3, CM-6 as Rego (OPA), AWS + GCP twins | Complete |
 | [Week 3](week-3/) | CI gate — GitHub Actions runs the three GCP policies on every PR, blocks violations | Complete |
-| Week 4 | | |
+| [Week 4](week-4/) | Evidence you can trust — Cosign keyless signing + `verify-evidence.sh`, tamper test | Complete |
 | Week 5 | | |
 | Week 6 | | |
 
