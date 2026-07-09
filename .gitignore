@@ -17,3 +17,17 @@ tfplan
 .DS_Store
 *.swp
 *.swo
+
+# Content drafts — this repo publishes code and evidence, not writing.
+# Root-level markdown is blocked except README; drafts live outside the repo.
+*draft*.md
+/*.md
+!/README.md
+
+# Secrets and credentials — belt and suspenders, should never exist here
+.env*
+*.pem
+*.key
+
+# Archives — starter bundles and exports stay local
+*.zip
