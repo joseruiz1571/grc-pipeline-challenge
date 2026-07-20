@@ -12,7 +12,7 @@ This is the [GRC Engineering Club](https://www.grcengclub.com/) pipeline challen
 | [Week 2](week-2/) | Policy-as-code — SC-28, AC-3, CM-6 as Rego (OPA), AWS + GCP twins | Complete |
 | [Week 3](week-3/) | CI gate — GitHub Actions runs the three GCP policies on every PR, blocks violations | Complete |
 | [Week 4](week-4/) | Evidence you can trust — Cosign keyless signing + `verify-evidence.sh`, tamper test | Complete |
-| Week 5 | | |
+| [Week 5](week-5/) | Turn on the cameras — Data Access audit logs + org policy (Terraform), Security Command Center (org-level, pending activation) | In progress |
 | Week 6 | | |
 
 Each week's directory contains the Terraform source and `evidence/plan.json` — the machine-readable artifact the next week reads.
