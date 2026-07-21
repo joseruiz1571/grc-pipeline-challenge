@@ -38,9 +38,24 @@ The trap generalizes: **sources get registered at activation regardless of entit
 - [x] Evidence bundle Cosign-signed and verified via `week-4/verify-evidence.sh` — same chain of custody as Week 4, no new signing mechanism. Signed locally (keyless device flow, Google OIDC), so verification needs the issuer override:
 
   ```bash
-  VERIFY_OIDC_ISSUER="https://accounts.google.com" ../week-4/verify-evidence.sh week5-evidence.tar.gz
+  VERIFY_OIDC_ISSUER="https://accounts.google.com" \
+  VERIFY_IDENTITY_REGEXP='^joseruiz1571@gmail\.com$' \
+    ../week-4/verify-evidence.sh week5-evidence.tar.gz
   # -> CHAIN INTACT
   ```
+
+  The issuer override exists because this bundle was signed locally (Google OIDC device flow) rather than by CI (GitHub Actions OIDC) — same reason Week 4's tamper test needed it. The identity regexp pins the signer exactly; verifying with the script's permissive `.*` default proves much less. The signature's Rekor transparency-log inclusion (logIndex `2211089201`) rides inside `week5-evidence.tar.gz.sig.bundle`, so the signing time is log-attested, not self-asserted.
+
+## Evidence provenance
+
+Captured 2026-07-21 (UTC) by `joseruiz1571@gmail.com` against org `468955167232`:
+
+- `evidence/scc-services.json` — `gcloud scc manage services list --organization=468955167232 --format=json`
+- `evidence/scc-findings.json` — `gcloud scc findings list 468955167232 --location=global --filter='state="ACTIVE"' --format=json`
+- `evidence/scc-entitlement-report.txt` — `./check-scc-entitlement.sh` (drift exit 1; exit-code contract in the script header)
+- Tier docs cited above retrieved 2026-07-21.
+
+Not assessed, and why: Security Health Analytics misconfiguration findings (unentitled on new Standard — the finding itself), and Event Threat Detection / other Premium-gated detectors (out of the free-tier cost envelope, same as day one). The empty findings file is a claim about entitlement, not about clean posture.
 
 ## No teardown
 

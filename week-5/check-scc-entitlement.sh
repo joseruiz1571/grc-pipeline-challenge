@@ -18,6 +18,11 @@
 #   2. Entitlement  - every expected service is effectively ENABLED
 # Captures the raw services state to evidence/scc-services.json either way --
 # a failed check is exactly the evidence worth preserving.
+#
+# Exit code contract (fail closed — an error is never reported as a pass):
+#   0 = all expected services effectively ENABLED
+#   1 = entitlement drift (state was read successfully; something is not ENABLED)
+#   2 = reachability/permission error (no SCC instance, API error, bad credentials)
 set -euo pipefail
 
 ORG_ID="${1:-468955167232}"
@@ -33,12 +38,22 @@ fail() {
   exit 1
 }
 
+fail_unreachable() {
+  echo "CHECK ERROR (not a drift verdict): $1" >&2
+  exit 2
+}
+
 # 1. REACHABILITY
 #    A never-enrolled org has no SCC instance and this call fails outright.
+#    Errors here exit 2, distinct from a drift verdict — a permission error
+#    must never masquerade as either "entitled" or "not entitled".
 echo "[1/2] Reachability — querying SCC service state for org $ORG_ID"
 if ! gcloud scc manage services list --organization="$ORG_ID" \
     --format=json > "$SERVICES_JSON" 2>/tmp/scc-entitlement-err.log; then
-  fail "no SCC instance reachable for org $ORG_ID: $(cat /tmp/scc-entitlement-err.log)"
+  fail_unreachable "SCC service state unreadable for org $ORG_ID: $(cat /tmp/scc-entitlement-err.log)"
+fi
+if ! jq -e 'length > 0' "$SERVICES_JSON" >/dev/null 2>&1; then
+  fail_unreachable "service list came back empty or unparseable — refusing to render a drift verdict from it"
 fi
 echo "      SCC instance reachable, state captured to $SERVICES_JSON"
 
