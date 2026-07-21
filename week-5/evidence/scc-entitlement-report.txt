@@ -1,0 +1,5 @@
+[1/2] Reachability — querying SCC service state for org 468955167232
+      SCC instance reachable, state captured to ./evidence/scc-services.json
+[2/2] Entitlement — asserting expected services are effectively ENABLED
+      security-health-analytics: DISABLED — expected ENABLED
+ENTITLEMENT DRIFT: one or more expected services are not effectively enabled (state captured in ./evidence/scc-services.json)
