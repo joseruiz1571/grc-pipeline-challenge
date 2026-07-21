@@ -1,0 +1,1849 @@
+[
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "modules": {
+      "AGENT_ENGINE_ABUSE_SUDO_FOR_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_ADDED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_ADDED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_ADDED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_ADDED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_BASE64_ELF_FILE_CMDLINE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_BASE64_ENCODED_PYTHON_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_BASE64_ENCODED_SHELL_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_BUILT_IN_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_BUILT_IN_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_BUILT_IN_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_CONTAINER_ESCAPE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_DETECT_CRYPTO_MINERS_USING_STRATUM_PROTOCOL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_DETECT_MALICIOUS_CMDLINES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_FILELESS_EXECUTION_DETECTION_MEMFD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_FIND_GCP_CREDENTIALS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_GPG_KEY_RECONNAISSANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_KUBERNETES_ATTACK_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_LAUNCH_CODE_COMPILER_TOOL_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_LAUNCH_REMOTE_FILE_COPY_TOOLS_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_LOCAL_RECONNAISSANCE_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_MALICIOUS_PYTHON_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_MALICIOUS_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_MALICIOUS_URL_OBSERVED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_MODIFIED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_MODIFIED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_MODIFIED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_MODIFIED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_NETCAT_REMOTE_CODE_EXECUTION_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_POLKIT_LOCAL_PRIVILEGE_ESCALATION_VULNERABILITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_POSSIBLE_ARBITRARY_COMMAND_EXECUTION_THROUGH_CUPS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_POSSIBLE_REMOTE_COMMAND_EXECUTION_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_PROGRAM_RUN_WITH_DISALLOWED_HTTP_PROXY_ENV": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_REMOVE_BULK_DATA_FROM_DISK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_REPORT_CLI_ARGUMENTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_REVERSE_SHELL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_SEARCH_PRIVATE_KEYS_OR_PASSWORDS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_SOCAT_REVERSE_SHELL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_STEGANOGRAPHY_TOOL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_SUDO_POTENTIAL_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_SUSPICIOUS_OPENSSL_SHARED_OBJECT_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_UNEXPECTED_CHILD_SHELL": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/AGENT_ENGINE_THREAT_DETECTION",
+    "updateTime": "9999-12-31T23:59:59.999999999Z"
+  },
+  {
+    "effectiveEnablementState": "ENABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/ARTIFACT_ANALYSIS",
+    "updateTime": "2026-07-20T03:29:34.010088802Z"
+  },
+  {
+    "effectiveEnablementState": "ENABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/GCE_VULNERABILITY_ASSESSMENT",
+    "updateTime": "2026-07-20T03:29:34.010088802Z"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "modules": {
+      "SCAN_FROM_STATIC_IP": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/WEB_SECURITY_SCANNER",
+    "updateTime": "9999-12-31T23:59:59.999999999Z"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "modules": {
+      "MALWARE_DISK_SCAN_YARA_AWS": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/VM_THREAT_DETECTION_AWS"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "modules": {
+      "CRYPTOMINING_HASH": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CRYPTOMINING_YARA": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "KERNEL_INTEGRITY_TAMPERING": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "KERNEL_MEMORY_TAMPERING": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MALWARE_DISK_SCAN_YARA": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/VM_THREAT_DETECTION",
+    "updateTime": "9999-12-31T23:59:59.999999999Z"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/AGENT_ENGINE_VULN_ASSESSMENT"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "modules": {
+      "AGENT_ENGINE_ANOMALOUS_ACCESS_TO_METADATA_SERVICE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_BIG_QUERY_EXFIL_TO_CLOUD_STORAGE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_BIG_QUERY_EXFIL_TO_EXTERNAL_TABLE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_BIG_QUERY_EXFIL_VPC_PERIMETER_VIOLATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_CLOUDSQL_EXFIL_EXPORT_TO_EXTERNAL_GCS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_CLOUDSQL_EXFIL_EXPORT_TO_PUBLIC_GCS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_EXCESSIVE_FAILED_ATTEMPT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_IAM_ANOMALOUS_BEHAVIOR_SERVICE_ACCOUNT_GETS_OWN_IAM_POLICY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_PORT_SCANNING_EVIDENCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_SUSPICIOUS_TOKEN_GENERATION_CROSS_PROJECT_ACCESS_TOKEN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_SUSPICIOUS_TOKEN_GENERATION_CROSS_PROJECT_OPENID": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_SUSPICIOUS_TOKEN_GENERATION_IMPLICIT_DELEGATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_SUSPICIOUS_TOKEN_GENERATION_SIGN_JWT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AGENT_ENGINE_UNAUTHORIZED_SERVICE_ACCOUNT_API_CALL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_AGENT_GRANTED_TOKEN_CREATOR_ROLE_FOLDER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_AGENT_GRANTED_TOKEN_CREATOR_ROLE_ORG": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_AGENT_GRANTED_TOKEN_CREATOR_ROLE_PROJECT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_ANOMALOUS_BEHAVIOR_NEW_API_METHOD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_ANOMALOUS_SA_DELEGATION_IMPERSONATION_OF_SA_ADMIN_ACTIVITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_ANOMALOUS_SA_DELEGATION_IMPERSONATOR_ADMIN_ACTIVITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_ANOMALOUS_SA_DELEGATION_IMPERSONATOR_DATA_ACCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_ANOMALOUS_SA_DELEGATION_MULTISTEP_ADMIN_ACTIVITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_ANOMALOUS_SA_DELEGATION_MULTISTEP_DATA_ACCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_DORMANT_SERVICE_ACCOUNT_USED_IN_ACTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AI_IAM_ANOMALOUS_BEHAVIOR_IP_GEOLOCATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_SUPERUSER_WRITES_TO_USER_TABLES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_USER_GRANTED_ALL_PERMISSIONS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ANOMALOUS_ACCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ANOMALOUS_BEHAVIOR_NEW_API_METHOD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ANOMALOUS_SA_DELEGATION_IMPERSONATION_OF_SA_ADMIN_ACTIVITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ANOMALOUS_SA_DELEGATION_IMPERSONATOR_ADMIN_ACTIVITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ANOMALOUS_SA_DELEGATION_IMPERSONATOR_DATA_ACCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ANOMALOUS_SA_DELEGATION_MULTISTEP_ADMIN_ACTIVITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ANOMALOUS_SA_DELEGATION_MULTISTEP_DATA_ACCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ANONYMOUS_SESSIONS_GRANTED_CLUSTER_ADMIN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_APPLIANCES_REMOVE_APPLIANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_DELETE_BACKUP_PLAN_ASSOCIATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_DELETE_VAULT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_DELETE_VAULT_BACKUP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_EXPIRE_IMAGE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_EXPIRE_IMAGES_ALL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_HOSTS_DELETE_HOST": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_PROFILES_DELETE_PROFILE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_REDUCE_BACKUP_EXPIRATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_REDUCE_BACKUP_FREQUENCY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_REMOVE_PLAN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_STORAGE_POOLS_DELETE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_TEMPLATES_DELETE_POLICY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BACKUP_TEMPLATES_DELETE_TEMPLATE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BILLING_DISABLED_MULTIPLE_PROJECTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BILLING_DISABLED_SINGLE_PROJECT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BINARY_AUTHORIZATION_BREAKGLASS_WORKLOAD_CREATE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BINARY_AUTHORIZATION_BREAKGLASS_WORKLOAD_UPDATE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BRUTE_FORCE_SSH": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDSQL_EXFIL_EXPORT_TO_EXTERNAL_GCS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDSQL_EXFIL_EXPORT_TO_PUBLIC_GCS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDSQL_EXFIL_RESTORE_BACKUP_TO_EXTERNAL_INSTANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDSQL_EXFIL_USER_GRANTED_ALL_PERMISSIONS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDSQL_SUPERUSER_WRITES_TO_USER_TABLES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_DB_LOGIN_FAILED_ANON_IP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_DB_LOGIN_SUCCEEDED_ANON_IP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_IDS_THREAT_ACTIVITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_CRYPTOMINING_DOCKER_IMAGES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_JOBS_CRYPTOMINING_COMMANDS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SERVICES_SET_IAM_POLICY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_ALLOWED_COMPUTE_ENGINE_INSTANCE_TYPE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_ALLOWED_COMPUTE_ENGINE_REGION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_ALLOWED_COMPUTE_ENGINE_SOURCE_IMAGE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_BAD_DOMAIN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_BAD_IP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_BREAKGLASS_ACCOUNT_USED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_CUSTOM_ROLE_WITH_PROHIBITED_PERMISSION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_NEW_API_METHOD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_UNEXPECTED_CLOUD_API_CALL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIGURABLE_UNEXPECTED_ROLE_GRANT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CRYPTOMINING_POOL_DOMAIN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CRYPTOMINING_POOL_IP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DATA_EXFILTRATION_BIG_QUERY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DATA_EXFILTRATION_BIG_QUERY_EXTRACTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DATA_EXFILTRATION_BIG_QUERY_TO_GOOGLE_DRIVE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DATA_EXFILTRATION_BIG_QUERY_TO_PUBLIC_RESOURCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DEFENSE_EVASION_MODIFY_VPC_SERVICE_CONTROL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DNS_TUNNELING_IODINE_HANDSHAKE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DORMANT_SERVICE_ACCOUNT_ADDED_IN_IAM_ROLE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DORMANT_SERVICE_ACCOUNT_IMPERSONATION_ROLE_GRANTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DORMANT_SERVICE_ACCOUNT_KEY_CREATED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DORMANT_SERVICE_ACCOUNT_USED_IN_ACTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EXCESSIVE_FAILED_ATTEMPT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EXTERNAL_AI_AGENT_GRANTED_SENSITIVE_ROLE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EXTERNAL_MEMBER_ADDED_TO_PRIVILEGED_GROUP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FOLDER_LEVEL_SERVICE_ACCOUNT_TOKEN_CREATOR_ROLE_ADDED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GCE_ADMIN_ADD_SSH_KEY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GCE_ADMIN_ADD_STARTUP_SCRIPT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GCS_BUCKET_IP_FILTERING_MODIFIED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_ANONYMOUS_USERS_GRANTED_ACCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_APPROVE_CSR_FORBIDDEN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_CLUSTERROLE_PRIVILEGED_VERBS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_CONTROL_PLANE_CAN_GET_SENSITIVE_OBJECT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_CONTROL_PLANE_CREATE_SENSITIVE_BINDING": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_CONTROL_PLANE_CSR_FOR_MASTER_CERT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_CONTROL_PLANE_EDIT_SENSITIVE_RBAC_OBJECT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_CONTROL_PLANE_GET_CSR_WITH_COMPROMISED_BOOTSTRAP_CREDENTIALS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_CONTROL_PLANE_LAUNCH_PRIVILEGED_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_CRB_CLUSTERROLE_AGGREGATION_CONTROLLER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_CSR_APPROVED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_EXCESSIVELY_CAPABLE_CONTAINER_CREATED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_KUBE_DNS_MODIFICATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_MANUALLY_DELETED_CSR": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_NODEPORT_SERVICE_CREATED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_POD_MASQUERADING": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_RESOURCE_CREATED_ANONYMOUSLY_FROM_INTERNET": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_RESOURCE_MODIFIED_ANONYMOUSLY_FROM_INTERNET": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_REVERSE_SHELL_POD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_SENSITIVE_HOSTPATH": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_SENSITIVE_NAMESPACE_WORKLOAD_TRIGGERED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_SERVICE_ACCOUNT_CREATION_SENSITIVE_NAMESPACE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_SHAREPROCESSNAMESPACE_POD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_STATIC_POD_CREATED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_SUSPICIOUS_CRYPTOMINING_POD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_SUSPICIOUS_EXEC_ATTACH": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_SUSPICIOUS_EXPLOIT_POD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_TOR_PROXY_IP_REQUEST": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GKE_WEBHOOK_CONFIG_CREATED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GLOBAL_SHUTDOWN_SCRIPT_ADDED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GLOBAL_STARTUP_SCRIPT_ADDED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_ANOMALOUS_BEHAVIOR_IP_GEOLOCATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_ANOMALOUS_BEHAVIOR_USER_AGENT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_ANOMALOUS_GRANT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "INFORMATION_GATHERING_TOOL_USED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LEAKED_SA_KEY_USED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LOG4J_ACTIVE_SCAN_SUCCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LOG4J_BAD_DOMAIN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LOG4J_BAD_IP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LOG4J_COMPROMISE_ATTEMPT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MALWARE_BAD_DOMAIN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MALWARE_BAD_IP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MIG_AUTOSCALING_SET_TO_MAX": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFY_BOOT_DISK_ATTACH_TO_INSTANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OFFENSIVE_SECURITY_DISTRO_ACTIVITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ORG_LEVEL_SERVICE_ACCOUNT_TOKEN_CREATOR_ROLE_ADDED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OS_PATCH_EXECUTION_FROM_SERVICE_ACCOUNT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PRIVILEGED_GROUP_OPENED_TO_PUBLIC": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PROJECT_HTTP_POLICY_BLOCK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PROJECT_LEVEL_SERVICE_ACCOUNT_TOKEN_CREATOR_ROLE_ADDED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SECRETS_ACCESSED_IN_KUBERNETES_NAMESPACE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SECRET_FOUND_IN_LOGS_SECRET_MANAGER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SENSITIVE_AI_PERMISSION_ADDED_TO_CUSTOM_ROLE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SENSITIVE_ROLE_GRANTED_BY_AI_AGENT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SENSITIVE_ROLE_TO_GROUP_WITH_EXTERNAL_MEMBER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SERVICE_ACCOUNT_EDITOR_OWNER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SERVICE_ACCOUNT_KEY_CREATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SERVICE_ACCOUNT_SELF_INVESTIGATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SERVICE_API_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_CROSS_PROJECT_PERMISSION_DATAFUSION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_TOKEN_GENERATION_CROSS_PROJECT_ACCESS_TOKEN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_TOKEN_GENERATION_CROSS_PROJECT_OPENID": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_TOKEN_GENERATION_IMPLICIT_DELEGATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_TOKEN_GENERATION_SIGN_JWT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "UNAUTHORIZED_SERVICE_ACCOUNT_API_CALL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "UNMANAGED_ACCOUNT_ADDED_IN_IAM_ROLE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "VPC_FIREWALL_HIGH_PRIORITY_BLOCK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "VPC_FIREWALL_MASS_RULE_DELETION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "VPC_ROUTE_MASQUERADE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WORKSPACE_ACCOUNT_DISABLED_HIJACKED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WORKSPACE_DISABLED_PASSWORD_LEAK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WORKSPACE_GOVERNMENT_BACKED_ATTACK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WORKSPACE_SSO_ENABLEMENT_TOGGLE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WORKSPACE_SSO_SETTINGS_CHANGED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WORKSPACE_STRONG_AUTHENTICATION_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WORKSPACE_SUSPICIOUS_LOGIN_BLOCKED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WORKSPACE_TWO_STEP_VERIFICATION_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/EVENT_THREAT_DETECTION",
+    "updateTime": "9999-12-31T23:59:59.999999999Z"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/AZURE_VULNERABILITY_ASSESSMENT"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/EC2_VULNERABILITY_ASSESSMENT"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/ARTIFACT_GUARD"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/NOTEBOOK_SECURITY_SCANNER"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "modules": {
+      "EXTERNALLY_EXPOSED_API": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EXTERNALLY_EXPOSED_ARBITRARY_DATA_READ": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EXTERNALLY_EXPOSED_RCE_VULNERABILITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EXTERNALLY_EXPOSED_UI": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EXTERNALLY_EXPOSED_WEAK_CREDENTIALS": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/EXTERNAL_EXPOSURE"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/VM_MANAGER"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "modules": {
+      "ACCESS_AWSCLOUDSHELLFULLACCESS_RESTRICTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ACCESS_KEYS_ROTATED_90_DAYS_LESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ACCESS_TRANSPARENCY_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ADMIN_SERVICE_ACCOUNT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_AUTO_BACKUP_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_BACKUPS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_CMEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_LOG_ERROR_VERBOSITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_LOG_MIN_ERROR_STATEMENT_SEVERITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_LOG_MIN_MESSAGES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_PUBLIC_IP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALLOYDB_SSL_NOT_ENFORCED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALL_EXPIRED_SSL_TLS_CERTIFICATES_STORED_AWS_IAM_REMOVED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ALPHA_CLUSTER_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "API_KEY_APIS_UNRESTRICTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "API_KEY_APPS_UNRESTRICTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "API_KEY_EXISTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "API_KEY_NOT_ROTATED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AUDIT_CONFIG_NOT_MONITORED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AUDIT_LOGGING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AUTOSCALING_GROUP_ELB_HEALTHCHECK_REQUIRED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AUTO_BACKUP_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AUTO_MINOR_VERSION_UPGRADE_FEATURE_ENABLED_RDS_INSTANCES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AUTO_REPAIR_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AUTO_UPGRADE_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AWS_CONFIG_ENABLED_ALL_REGIONS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "AWS_SECURITY_HUB_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BIGQUERY_TABLE_CMEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BINARY_AUTHORIZATION_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUCKET_CMEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUCKET_IAM_NOT_MONITORED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUCKET_LOGGING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUCKET_POLICY_ONLY_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDTRAIL_LOGS_ENCRYPTED_REST_USING_KMS_CMKS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDTRAIL_LOG_FILE_VALIDATION_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDTRAIL_TRAILS_INTEGRATED_CLOUDWATCH_LOGS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDWATCH_ALARM_ACTION_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUDWATCH_LOG_GROUP_ENCRYPTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_ASSET_API_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_TRAIL_CLOUD_WATCH_LOGS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLUSTER_LOGGING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLUSTER_MONITORING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLUSTER_PRIVATE_GOOGLE_ACCESS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLUSTER_SECRETS_ENCRYPTION_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLUSTER_SHIELDED_NODES_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CODEBUILD_PROJECT_ENVVAR_AWSCRED_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CODEBUILD_PROJECT_SOURCE_REPO_URL_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "COMPUTE_PROJECT_WIDE_SSH_KEYS_ALLOWED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "COMPUTE_SECURE_BOOT_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "COMPUTE_SERIAL_PORTS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONFIDENTIAL_COMPUTING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "COS_NOT_USED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CREDENTIALS_UNUSED_45_DAYS_GREATER_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CUSTOM_ORG_POLICY_VIOLATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CUSTOM_ROLE_NOT_MONITORED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DATAPROC_CMEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DATAPROC_IMAGE_OUTDATED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DATASET_CMEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DEFAULT_NETWORK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DEFAULT_SECURITY_GROUP_VPC_RESTRICTS_ALL_TRAFFIC": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DEFAULT_SERVICE_ACCOUNT_USED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DISK_CMEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DISK_CSEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DMS_REPLICATION_NOT_PUBLIC": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DNSSEC_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DNS_LOGGING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DO_SETUP_ACCESS_KEYS_DURING_INITIAL_USER_SETUP_ALL_IAM_USERS_CONSOLE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DYNAMODB_AUTOSCALING_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DYNAMODB_IN_BACKUP_PLAN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DYNAMODB_PITR_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DYNAMODB_TABLE_ENCRYPTED_KMS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EBS_OPTIMIZED_INSTANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EBS_SNAPSHOT_PUBLIC_RESTORABLE_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EBS_VOLUME_ENCRYPTION_ENABLED_ALL_REGIONS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EC2_INSTANCES_IN_VPC": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EC2_INSTANCE_NO_PUBLIC_IP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EC2_MANAGEDINSTANCE_ASSOCIATION_COMPLIANCE_STATUS_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EC2_MANAGEDINSTANCE_PATCH_COMPLIANCE_STATUS_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EC2_METADATA_SERVICE_ALLOWS_IMDSV2": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EC2_VOLUME_INUSE_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EFS_ENCRYPTED_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EFS_IN_BACKUP_PLAN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "EGRESS_DENY_RULE_NOT_SET": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ELB_ACM_CERTIFICATE_REQUIRED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ELB_DELETION_PROTECTION_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ELB_LOGGING_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ELB_TLS_HTTPS_LISTENERS_ONLY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ENCRYPTED_VOLUMES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ENCRYPTION_AT_REST_ENABLED_RDS_INSTANCES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ENCRYPTION_ENABLED_EFS_FILE_SYSTEMS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ESSENTIAL_CONTACTS_NOT_CONFIGURED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FIREWALL_NOT_MONITORED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FIREWALL_RULE_LOGGING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FLOW_LOGS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FULL_API_ACCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "HTTP_LOAD_BALANCER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_PASSWORD_POLICY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_PASSWORD_POLICY_PREVENTS_PASSWORD_REUSE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_PASSWORD_POLICY_REQUIRES_MINIMUM_LENGTH_14_GREATER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_POLICIES_ALLOW_FULL_ADMINISTRATIVE_PRIVILEGES_ATTACHED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_USERS_RECEIVE_PERMISSIONS_GROUPS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_USER_GROUP_MEMBERSHIP_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_USER_MFA_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IAM_USER_UNUSED_CREDENTIALS_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "INSTANCE_OS_LOGIN_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "INTEGRITY_MONITORING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "INTRANODE_VISIBILITY_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IP_ALIAS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "IP_FORWARDING_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "KMS_CMK_NOT_SCHEDULED_FOR_DELETION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "KMS_KEY_NOT_ROTATED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "KMS_PROJECT_HAS_OWNER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "KMS_PUBLIC_KEY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "KMS_ROLE_SEPARATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LAMBDA_CONCURRENCY_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LAMBDA_DLQ_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LAMBDA_FUNCTION_PUBLIC_ACCESS_PROHIBITED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LAMBDA_INSIDE_VPC": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LEGACY_AUTHORIZATION_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LEGACY_METADATA_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LEGACY_NETWORK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LOAD_BALANCER_LOGGING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LOCKED_RETENTION_POLICY_NOT_SET": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LOG_NOT_EXPORTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MASTER_AUTHORIZED_NETWORKS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MFA_DELETE_ENABLED_S3_BUCKETS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MFA_ENABLED_ROOT_USER_ACCOUNT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MFA_NOT_ENFORCED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MULTI_FACTOR_AUTHENTICATION_MFA_ENABLED_ALL_IAM_USERS_CONSOLE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NETWORK_NOT_MONITORED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NETWORK_POLICY_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NODEPOOL_BOOT_CMEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NODEPOOL_SECURE_BOOT_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NON_ORG_IAM_MEMBER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NO_NETWORK_ACLS_ALLOW_INGRESS_0_0_0_0_REMOTE_SERVER_ADMINISTRATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NO_ROOT_USER_ACCOUNT_ACCESS_KEY_EXISTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NO_SECURITY_GROUPS_ALLOW_INGRESS_0_0_0_0_REMOTE_SERVER_ADMINISTRATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NO_SECURITY_GROUPS_ALLOW_INGRESS_0_REMOTE_SERVER_ADMINISTRATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OBJECT_VERSIONING_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ONE_ACTIVE_ACCESS_KEY_AVAILABLE_ANY_SINGLE_IAM_USER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_CASSANDRA_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_CISCOSECURE_WEBSM_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_DIRECTORY_SERVICES_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_DNS_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_ELASTICSEARCH_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_FIREWALL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_FTP_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_GROUP_IAM_MEMBER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_HTTP_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_LDAP_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_MEMCACHED_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_MONGODB_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_MYSQL_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_NETBIOS_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_ORACLEDB_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_POP3_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_POSTGRESQL_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_RDP_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_REDIS_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_SMTP_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_SSH_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OPEN_TELNET_PORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ORG_POLICY_CONFIDENTIAL_VM_POLICY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ORG_POLICY_LOCATION_RESTRICTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OS_LOGIN_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OVER_PRIVILEGED_ACCOUNT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OVER_PRIVILEGED_SCOPES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OVER_PRIVILEGED_SERVICE_ACCOUNT_USER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "OWNER_NOT_MONITORED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "POD_SECURITY_POLICY_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PRIMITIVE_ROLES_USED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PRIVATE_CLUSTER_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PRIVATE_GOOGLE_ACCESS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PUBLIC_ACCESS_GIVEN_RDS_INSTANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PUBLIC_BUCKET_ACL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PUBLIC_COMPUTE_IMAGE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PUBLIC_DATASET": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PUBLIC_IP_ADDRESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PUBLIC_LOG_BUCKET": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PUBLIC_SQL_INSTANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PUBSUB_CMEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "RDS_ENHANCED_MONITORING_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "RDS_INSTANCE_DELETION_PROTECTION_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "RDS_IN_BACKUP_PLAN": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "RDS_LOGGING_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "RDS_MULTI_AZ_SUPPORT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REDIS_ROLE_USED_ON_ORG": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REDSHIFT_CLUSTER_CONFIGURATION_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REDSHIFT_CLUSTER_MAINTENANCESETTINGS_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REDSHIFT_CLUSTER_PUBLIC_ACCESS_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "RELEASE_CHANNEL_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "RESTRICTED_COMMON_PORTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "RESTRICTED_SSH": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ROTATION_CUSTOMER_CREATED_CMKS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ROTATION_CUSTOMER_CREATED_SYMMETRIC_CMKS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ROUTE_NOT_MONITORED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ROUTING_TABLES_VPC_PEERING_ARE_LEAST_ACCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "RSASHA1_FOR_SIGNING": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "S3_ACCOUNT_LEVEL_PUBLIC_ACCESS_BLOCKS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "S3_BUCKETS_CONFIGURED_BLOCK_PUBLIC_ACCESS_BUCKET_AND_ACCOUNT_SETTINGS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "S3_BUCKET_ACCESS_LOGGING_ENABLED_CLOUDTRAIL_S3_BUCKET": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "S3_BUCKET_LOGGING_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "S3_BUCKET_POLICY_SET_DENY_HTTP_REQUESTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "S3_BUCKET_REPLICATION_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "S3_BUCKET_SERVER_SIDE_ENCRYPTION_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "S3_BUCKET_VERSIONING_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "S3_DEFAULT_ENCRYPTION_KMS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SAGEMAKER_NOTEBOOK_INSTANCE_KMS_KEY_CONFIGURED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SAGEMAKER_NOTEBOOK_NO_DIRECT_INTERNET_ACCESS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SECRETSMANAGER_ROTATION_ENABLED_CHECK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SERVICE_ACCOUNT_KEY_NOT_ROTATED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SERVICE_ACCOUNT_ROLE_SEPARATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SHIELDED_VM_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SNS_ENCRYPTED_KMS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_CMEK_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_CONTAINED_DATABASE_AUTHENTICATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_CROSS_DB_OWNERSHIP_CHAINING": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_EXTERNAL_SCRIPTS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_INSTANCE_NOT_MONITORED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOCAL_INFILE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_CHECKPOINTS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_CONNECTIONS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_DISCONNECTIONS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_DURATION_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_ERROR_VERBOSITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_EXECUTOR_STATS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_HOSTNAME_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_LOCK_WAITS_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_MIN_DURATION_STATEMENT_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_MIN_ERROR_STATEMENT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_MIN_ERROR_STATEMENT_SEVERITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_MIN_MESSAGES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_PARSER_STATS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_PLANNER_STATS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_STATEMENT": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_STATEMENT_STATS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_LOG_TEMP_FILES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_NO_ROOT_PASSWORD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_PUBLIC_IP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_REMOTE_ACCESS_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_SKIP_SHOW_DATABASE_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_TRACE_FLAG_3625": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_USER_CONNECTIONS_CONFIGURED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_USER_OPTIONS_CONFIGURED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SQL_WEAK_ROOT_PASSWORD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SSL_NOT_ENFORCED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "TOO_MANY_KMS_USERS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "USER_MANAGED_SERVICE_ACCOUNT_KEY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "VPC_DEFAULT_SECURITY_GROUP_CLOSED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "VPC_FLOW_LOGGING_ENABLED_ALL_VPCS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "VPC_FLOW_LOGS_SETTINGS_NOT_RECOMMENDED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "VPC_SG_OPEN_ONLY_TO_AUTHORIZED_PORTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "VPC_VPN_2_TUNNELS_UP": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WEAK_SSL_POLICY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WEB_UI_ENABLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "WORKLOAD_IDENTITY_DISABLED": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/SECURITY_HEALTH_ANALYTICS"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "modules": {
+      "ABUSE_SUDO_FOR_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ACCESS_SENSITIVE_FILES_ON_NODES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ADDED_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED",
+        "intendedEnablementState": "DISABLED"
+      },
+      "ADDED_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED",
+        "intendedEnablementState": "DISABLED"
+      },
+      "ADDED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ADDED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ADDED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ADDED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BASE64_ELF_FILE_CMDLINE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BASE64_ENCODED_PYTHON_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BASE64_ENCODED_SHELL_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUILT_IN_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUILT_IN_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUILT_IN_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONTAINER_ESCAPE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DETECT_MALICIOUS_CMDLINES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DISABLE_OR_MODIFY_LINUX_AUDIT_SYSTEM": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FILELESS_EXECUTION_DETECTION_MEMFD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FILELESS_EXECUTION_DETECTION_SHM": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FIND_GCP_CREDENTIALS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GPG_KEY_RECONNAISSANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "INGRESS_NIGHTMARE_VULNERABILITY_EXPLOITATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "KUBERNETES_ATTACK_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LAUNCH_CODE_COMPILER_TOOL_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LAUNCH_REMOTE_FILE_COPY_TOOLS_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LOCAL_RECONNAISSANCE_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MALICIOUS_PYTHON_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MALICIOUS_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MALICIOUS_URL_OBSERVED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFIED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFIED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFIED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFIED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFY_LD_SO_PRELOAD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NETCAT_REMOTE_CODE_EXECUTION_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PAM_D_MODIFICATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PIPED_ENCODED_CODE_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PIPED_ENCODED_DOWNLOAD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "POLKIT_LOCAL_PRIVILEGE_ESCALATION_VULNERABILITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "POSSIBLE_ARBITRARY_COMMAND_EXECUTION_THROUGH_CUPS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "POSSIBLE_REMOTE_COMMAND_EXECUTION_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PROGRAM_RUN_WITH_DISALLOWED_HTTP_PROXY_ENV": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REMOVE_BULK_DATA_FROM_DISK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REPORT_CLI_ARGUMENTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REPORT_ENVIRONMENT_VARIABLES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REVERSE_SHELL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ROOT_CERTIFICATE_INSTALLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SEARCH_PRIVATE_KEYS_OR_PASSWORDS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SOCAT_REVERSE_SHELL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "STEGANOGRAPHY_TOOL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUDO_POTENTIAL_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_CRON_MODIFICATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_CRYPTO_MINING_ACTIVITY_USING_STRATUM_PROTOCOL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_OPENSSL_SHARED_OBJECT_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "UNEXPECTED_CHILD_SHELL": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/CONTAINER_THREAT_DETECTION",
+    "updateTime": "9999-12-31T23:59:59.999999999Z"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "modules": {
+      "CLOUD_RUN_ABUSE_SUDO_FOR_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_ADDED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_ADDED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_ADDED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_ADDED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BASE64_ELF_FILE_CMDLINE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BASE64_ENCODED_PYTHON_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BASE64_ENCODED_SHELL_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BUILT_IN_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BUILT_IN_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BUILT_IN_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_CONTAINER_ESCAPE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_DETECT_MALICIOUS_CMDLINES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_FILELESS_EXECUTION_DETECTION_MEMFD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_FIND_GCP_CREDENTIALS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_GPG_KEY_RECONNAISSANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_KUBERNETES_ATTACK_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_LAUNCH_CODE_COMPILER_TOOL_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_LAUNCH_REMOTE_FILE_COPY_TOOLS_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_LOCAL_RECONNAISSANCE_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MALICIOUS_PYTHON_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MALICIOUS_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MALICIOUS_URL_OBSERVED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MODIFIED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MODIFIED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MODIFIED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MODIFIED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_NETCAT_REMOTE_CODE_EXECUTION_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_POLKIT_LOCAL_PRIVILEGE_ESCALATION_VULNERABILITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_POSSIBLE_ARBITRARY_COMMAND_EXECUTION_THROUGH_CUPS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_POSSIBLE_REMOTE_COMMAND_EXECUTION_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_PROGRAM_RUN_WITH_DISALLOWED_HTTP_PROXY_ENV": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_REMOVE_BULK_DATA_FROM_DISK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_REPORT_CLI_ARGUMENTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_REPORT_ENVIRONMENT_VARIABLES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_REVERSE_SHELL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SEARCH_PRIVATE_KEYS_OR_PASSWORDS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SOCAT_REVERSE_SHELL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_STEGANOGRAPHY_TOOL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SUDO_POTENTIAL_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SUSPICIOUS_CRYPTO_MINING_ACTIVITY_USING_STRATUM_PROTOCOL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SUSPICIOUS_OPENSSL_SHARED_OBJECT_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_UNEXPECTED_CHILD_SHELL": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/CLOUD_RUN_THREAT_DETECTION"
+  }
+]
