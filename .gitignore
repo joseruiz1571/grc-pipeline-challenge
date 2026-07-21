@@ -23,6 +23,7 @@ tfplan
 *draft*.md
 /*.md
 !/README.md
+!/PORTFOLIO-CASE-STUDY.md
 
 # Secrets and credentials — belt and suspenders, should never exist here
 .env*

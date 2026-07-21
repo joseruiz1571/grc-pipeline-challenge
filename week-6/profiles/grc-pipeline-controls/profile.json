@@ -1,0 +1,32 @@
+{
+  "profile": {
+    "uuid": "f157f5fd-778a-4690-8668-712b6f57a9c4",
+    "metadata": {
+      "title": "GRC Pipeline Challenge — implemented controls profile",
+      "last-modified": "2026-07-21T16:45:00-05:00",
+      "version": "1.0.0",
+      "oscal-version": "1.2.1",
+      "remarks": "Exactly the NIST SP 800-53 rev5 controls this repository genuinely implements with signed-evidence traceability. Deliberately excluded despite README mentions: AU-3/AU-6 (Week 1 access logging is implemented but has no signed evidence bundle; nothing performs log review — note AU-12 is claimed with its AU-3 content requirement asserted, not evidenced), SI-4/RA-5 (SCC Standard is activated but Security Health Analytics is unentitled on new Standard-tier activations, so no scanner actually runs — claiming monitoring would be padding), AU-9 (the evidence vault with 90-day retention policy is applied and the preservation check passes against it, but that check's output is not yet itself a signed bundle; AU-9 joins this profile when the preservation evidence is signed into the chain)."
+    },
+    "imports": [
+      {
+        "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-3",
+              "au-2",
+              "au-10",
+              "au-12",
+              "cm-6",
+              "sc-28"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "component-definition": {
+    "uuid": "efa47491-7a4f-4cda-9291-3233bfd90d56",
+    "metadata": {
+      "title": "GRC Pipeline Challenge — Compliant GCS Storage Pipeline",
+      "last-modified": "2026-07-21T16:45:00-05:00",
+      "version": "1.0.0",
+      "oscal-version": "1.2.1",
+      "remarks": "Component definition for the six-week GRC Engineering Club pipeline challenge, implemented on GCP. Every implemented requirement names the actual Terraform resource or Rego policy that implements it and links to a Cosign-signed evidence bundle in this repository. Controls implemented in code but not covered by a signed evidence bundle (AU-3 access logging from Week 1) are deliberately NOT claimed here — a claim without traceable signed evidence is not a claim an auditor can use."
+    },
+    "components": [
+      {
+        "uuid": "4d86e24c-e41c-43a7-a8b6-c485e481ab55",
+        "type": "service",
+        "title": "Compliant GCS storage pipeline (weeks 1-5)",
+        "description": "Terraform-managed Google Cloud Storage with encryption, access enforcement, configuration guardrails, and Data Access audit logging; policy-as-code enforcement via OPA/conftest in CI; evidence chain of custody via Cosign keyless signing.",
+        "control-implementations": [
+          {
+            "uuid": "7a874ee2-6033-480d-a1c8-b9efc126b42e",
+            "source": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+            "description": "NIST SP 800-53 Revision 5 controls implemented by the pipeline, each traced to its Terraform resource or Rego policy and to a signed evidence bundle.",
+            "implemented-requirements": [
+              {
+                "uuid": "b592a1fe-3c2c-4e82-9aac-f6ebd1859e7b",
+                "control-id": "sc-28",
+                "description": "Protection of information at rest: google_storage_bucket.primary (week-1/main.tf) uses Google-managed encryption at rest; the OPA policy sc28_encryption_gcp.rego (week-2/policies) fails the CI gate for any planned bucket that disables it. The linked CI-signed bundle contains the conftest evaluation proving the policy ran against the live Terraform plan.",
+                "props": [
+                  {
+                    "name": "terraform-resource",
+                    "value": "google_storage_bucket.primary"
+                  },
+                  {
+                    "name": "policy-as-code",
+                    "value": "week-2/policies/sc28_encryption_gcp.rego"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "../../evidence/ci-signed/evidence.tar.gz",
+                    "rel": "evidence",
+                    "text": "CI-signed conftest evaluation (Cosign keyless, GitHub Actions OIDC)"
+                  }
+                ]
+              },
+              {
+                "uuid": "fdffd39f-9025-4315-b98b-acd50258831f",
+                "control-id": "ac-3",
+                "description": "Access enforcement: google_storage_bucket.primary (week-1/main.tf) sets uniform_bucket_level_access = true and public_access_prevention = enforced; ac3_no_public_gcp.rego (week-2/policies) fails the CI gate for any plan that weakens either. The linked CI-signed bundle contains the conftest evaluation.",
+                "props": [
+                  {
+                    "name": "terraform-resource",
+                    "value": "google_storage_bucket.primary"
+                  },
+                  {
+                    "name": "policy-as-code",
+                    "value": "week-2/policies/ac3_no_public_gcp.rego"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "../../evidence/ci-signed/evidence.tar.gz",
+                    "rel": "evidence",
+                    "text": "CI-signed conftest evaluation (Cosign keyless, GitHub Actions OIDC)"
+                  }
+                ]
+              },
+              {
+                "uuid": "044e7754-6301-4dc0-bfe3-996b6fce7764",
+                "control-id": "cm-6",
+                "description": "Configuration settings, mapped by clause: (a) establish/document — Terraform declares the settings (week-1 labels, week-5 org policies); (b) implement — applied and live-verified; (d) monitor/control changes — cm6_required_labels_gcp.rego fails the CI gate on drift (CI-signed bundle) and the org-policy plan is in the Week 5 signed bundle. Clause (c) — deviation identification and approval — is NOT evidenced: no exception register or approval workflow exists, so CM-6 is partially satisfied, for in-scope components only (no org-wide benchmark baseline such as CIS is adopted).",
+                "props": [
+                  {
+                    "name": "terraform-resource",
+                    "value": "google_org_policy_policy.disable_sa_key_creation, google_org_policy_policy.storage_public_access_prevention"
+                  },
+                  {
+                    "name": "policy-as-code",
+                    "value": "week-2/policies/cm6_required_labels_gcp.rego"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "../../evidence/ci-signed/evidence.tar.gz",
+                    "rel": "evidence",
+                    "text": "CI-signed conftest evaluation (labels enforcement)"
+                  },
+                  {
+                    "href": "../../../week-5/week5-evidence.tar.gz",
+                    "rel": "evidence",
+                    "text": "Week 5 signed bundle (org-policy plan, Cosign keyless, Google OIDC)"
+                  }
+                ]
+              },
+              {
+                "uuid": "6600ca5a-3a66-4dfc-a81f-e86287f716cc",
+                "control-id": "au-2",
+                "description": "Event logging: google_project_iam_audit_config.storage and .iam (week-5/main.tf) enable Data Access audit logs (DATA_READ/DATA_WRITE for storage.googleapis.com, DATA_READ for iam.googleapis.com), scoped to named services rather than allServices. A live storage.objects.list Data Access entry was captured post-apply. The linked Week 5 bundle contains the applied plan and capture evidence.",
+                "props": [
+                  {
+                    "name": "terraform-resource",
+                    "value": "google_project_iam_audit_config.storage, google_project_iam_audit_config.iam"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "../../../week-5/week5-evidence.tar.gz",
+                    "rel": "evidence",
+                    "text": "Week 5 signed bundle (Cosign keyless, Google OIDC)"
+                  }
+                ]
+              },
+              {
+                "uuid": "11523734-3c9a-414d-945b-cd4b71ed795d",
+                "control-id": "au-10",
+                "description": "Non-repudiation, scoped to EVIDENCE PRODUCTION: evidence bundles are Cosign keyless-signed with the signature recorded in the Rekor public transparency log, so neither the pipeline operator nor the CI system can later deny producing a given bundle; week-4/verify-evidence.sh proves the chain (CHAIN INTACT) against a pinned signer identity. Data Access audit logs (week-5/main.tf) additionally bind identity to bucket operations, but this claim does NOT extend to non-repudiation of arbitrary user actions in the environment, and audit records are signed at bundling time, not at emission — the window between emission and bundling is unattested. AU-10 is not in the 800-53B Low/Moderate baselines; this is a beyond-baseline implementation.",
+                "props": [
+                  {
+                    "name": "terraform-resource",
+                    "value": "google_project_iam_audit_config.storage, google_project_iam_audit_config.iam"
+                  },
+                  {
+                    "name": "mechanism",
+                    "value": "week-4/verify-evidence.sh (Cosign keyless + Rekor transparency log)"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "../../../week-5/week5-evidence.tar.gz",
+                    "rel": "evidence",
+                    "text": "Week 5 signed bundle (Cosign keyless, Google OIDC, Rekor logIndex 2211089201)"
+                  }
+                ]
+              },
+              {
+                "uuid": "f16b1c2d-ee66-45bc-928f-42da72806a50",
+                "control-id": "au-12",
+                "description": "Audit record generation: google_project_iam_audit_config resources (week-5/main.tf) turn on Data Access record generation at the project for the two services the pipeline actually uses; generation was verified live (storage.objects.list entry in the _Default data_access log). The linked Week 5 bundle contains the applied plan. Known seam: AU-12 generates records with the content AU-3 defines, and AU-3 is excluded from this profile for lack of signed evidence — AU-12's content requirement is therefore asserted (Cloud Audit Logs' fixed schema), not independently evidenced.",
+                "props": [
+                  {
+                    "name": "terraform-resource",
+                    "value": "google_project_iam_audit_config.storage, google_project_iam_audit_config.iam"
+                  }
+                ],
+                "links": [
+                  {
+                    "href": "../../../week-5/week5-evidence.tar.gz",
+                    "rel": "evidence",
+                    "text": "Week 5 signed bundle (Cosign keyless, Google OIDC)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

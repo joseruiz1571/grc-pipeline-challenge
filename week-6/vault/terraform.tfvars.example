@@ -1,0 +1,6 @@
+# Copy to terraform.tfvars and edit.
+project_id        = "gcloud-grc-pipeline"
+project_name      = "grc-pipeline"
+environment       = "dev"
+location          = "US-CENTRAL1"
+retention_seconds = 7776000 # 90 days

@@ -1,0 +1,15 @@
+# ISC-43/47 Traversal + preservation proof — 2026-07-21T17:49:15Z
+# Start: week-6/component-definitions/grc-pipeline/component-definition.json, implemented-requirement au-10
+# href: ../../../week-5/week5-evidence.tar.gz (relative to the component-definition directory)
+# Vault: gs://grc-pipeline-dev-evidence-vault-d24bb9f0 (GCS retention policy, 90 days)
+
+[1/3] Integrity — recomputing SHA-256 of week5-evidence.tar.gz
+      hash matches sidecar: a6fc5f0ff3157d9357c42e2e7ca36e22dccbc0dd0d1d2f7983fc26eff7e47e88
+[2/3] Authenticity — verifying Cosign signature
+      signature verified against issuer: https://accounts.google.com
+[3/3] Preservation — checking GCS retention on gs://grc-pipeline-dev-evidence-vault-d24bb9f0/week5-evidence.tar.gz
+
+CHAIN INTACT
+  integrity:    hash match
+  authenticity: cosign signature valid (https://accounts.google.com)
+  preservation: vault copy verified, retained until 2026-10-19T17:48:21Z

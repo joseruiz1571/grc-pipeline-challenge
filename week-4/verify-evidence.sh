@@ -5,7 +5,9 @@
 # is running this script. Three checks, each exits non-zero on failure:
 #   1. Integrity    - recomputed SHA-256 matches the .sha256 sidecar
 #   2. Authenticity - cosign verify-blob against the .sig.bundle
-#   3. Preservation - Object Lock retention still in the future (stretch, skipped if no vault)
+#   3. Preservation - vault retention still in the future (stretch, skipped if no vault)
+#                     AWS: S3 Object Lock (VAULT_BUCKET + VAULT_KEY)
+#                     GCP: GCS bucket retention policy (VAULT_GCS_BUCKET + VAULT_KEY)
 # Prints CHAIN INTACT only when every check that ran, passed.
 set -euo pipefail
 
@@ -85,6 +87,35 @@ if [[ -n "${VAULT_BUCKET:-}" && -n "${VAULT_KEY:-}" ]]; then
     fail "retention date $RETAIN_UNTIL is not in the future"
   fi
   PRESERVATION_STATUS="retained until $RETAIN_UNTIL"
+elif [[ -n "${VAULT_GCS_BUCKET:-}" && -n "${VAULT_KEY:-}" ]]; then
+  echo "[3/3] Preservation — checking GCS retention on gs://${VAULT_GCS_BUCKET}/${VAULT_KEY}"
+  if ! command -v gcloud >/dev/null 2>&1; then
+    fail "gcloud CLI not installed but VAULT_GCS_BUCKET is set"
+  fi
+
+  # Object must exist in the vault and match the local bundle bit-for-bit.
+  REMOTE_MD5=$(gcloud storage objects describe "gs://${VAULT_GCS_BUCKET}/${VAULT_KEY}" \
+    --format="value(md5_hash)" 2>/dev/null) || fail "object not found in vault: gs://${VAULT_GCS_BUCKET}/${VAULT_KEY}"
+  LOCAL_MD5=$(openssl md5 -binary "$BUNDLE" | base64)
+  if [[ "$REMOTE_MD5" != "$LOCAL_MD5" ]]; then
+    fail "vault copy differs from local bundle (md5 $REMOTE_MD5 != $LOCAL_MD5)"
+  fi
+
+  # GCS has no per-object Object Lock; the analog is the bucket retention policy.
+  # GCS stamps the resulting window on each object as retention_expiration —
+  # read that directly rather than recomputing it.
+  RETAIN_UNTIL=$(gcloud storage objects describe "gs://${VAULT_GCS_BUCKET}/${VAULT_KEY}" \
+    --format="value(retention_expiration)")
+  if [[ -z "$RETAIN_UNTIL" ]]; then
+    fail "vault object has no retention window — bucket retention policy missing?"
+  fi
+  RETAIN_TRIMMED=$(echo "$RETAIN_UNTIL" | sed -E 's/\+0000$/Z/; s/\+00:00$/Z/')
+  RETAIN_EPOCH=$(date -u -d "$RETAIN_TRIMMED" +%s 2>/dev/null || date -u -j -f "%Y-%m-%dT%H:%M:%SZ" "$RETAIN_TRIMMED" +%s)
+  NOW_EPOCH=$(date -u +%s)
+  if [[ "$RETAIN_EPOCH" -le "$NOW_EPOCH" ]]; then
+    fail "retention window $RETAIN_TRIMMED has already expired"
+  fi
+  PRESERVATION_STATUS="vault copy verified, retained until $RETAIN_TRIMMED"
 else
   echo "[3/3] Preservation — $PRESERVATION_STATUS"
 fi
