@@ -134,65 +134,340 @@
     "updateTime": "9999-12-31T23:59:59.999999999Z"
   },
   {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/AGENT_ENGINE_VULN_ASSESSMENT"
+  },
+  {
     "effectiveEnablementState": "ENABLED",
     "intendedEnablementState": "INHERITED",
     "name": "organizations/468955167232/locations/global/securityCenterServices/ARTIFACT_ANALYSIS",
     "updateTime": "2026-07-20T03:29:34.010088802Z"
   },
   {
-    "effectiveEnablementState": "ENABLED",
+    "effectiveEnablementState": "DISABLED",
     "intendedEnablementState": "INHERITED",
-    "name": "organizations/468955167232/locations/global/securityCenterServices/GCE_VULNERABILITY_ASSESSMENT",
-    "updateTime": "2026-07-20T03:29:34.010088802Z"
+    "name": "organizations/468955167232/locations/global/securityCenterServices/ARTIFACT_GUARD"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/AZURE_VULNERABILITY_ASSESSMENT"
   },
   {
     "effectiveEnablementState": "DISABLED",
     "intendedEnablementState": "INHERITED",
     "modules": {
-      "SCAN_FROM_STATIC_IP": {
+      "CLOUD_RUN_ABUSE_SUDO_FOR_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_ADDED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_ADDED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_ADDED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_ADDED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BASE64_ELF_FILE_CMDLINE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BASE64_ENCODED_PYTHON_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BASE64_ENCODED_SHELL_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BUILT_IN_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BUILT_IN_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_BUILT_IN_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_CONTAINER_ESCAPE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_DETECT_MALICIOUS_CMDLINES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_FILELESS_EXECUTION_DETECTION_MEMFD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_FIND_GCP_CREDENTIALS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_GPG_KEY_RECONNAISSANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_KUBERNETES_ATTACK_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_LAUNCH_CODE_COMPILER_TOOL_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_LAUNCH_REMOTE_FILE_COPY_TOOLS_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_LOCAL_RECONNAISSANCE_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MALICIOUS_PYTHON_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MALICIOUS_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MALICIOUS_URL_OBSERVED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MODIFIED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MODIFIED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MODIFIED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_MODIFIED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_NETCAT_REMOTE_CODE_EXECUTION_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_POLKIT_LOCAL_PRIVILEGE_ESCALATION_VULNERABILITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_POSSIBLE_ARBITRARY_COMMAND_EXECUTION_THROUGH_CUPS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_POSSIBLE_REMOTE_COMMAND_EXECUTION_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_PROGRAM_RUN_WITH_DISALLOWED_HTTP_PROXY_ENV": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_REMOVE_BULK_DATA_FROM_DISK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_REPORT_CLI_ARGUMENTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_REPORT_ENVIRONMENT_VARIABLES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_REVERSE_SHELL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SEARCH_PRIVATE_KEYS_OR_PASSWORDS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SOCAT_REVERSE_SHELL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_STEGANOGRAPHY_TOOL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SUDO_POTENTIAL_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SUSPICIOUS_CRYPTO_MINING_ACTIVITY_USING_STRATUM_PROTOCOL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_SUSPICIOUS_OPENSSL_SHARED_OBJECT_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CLOUD_RUN_UNEXPECTED_CHILD_SHELL": {
         "effectiveEnablementState": "DISABLED"
       }
     },
-    "name": "organizations/468955167232/locations/global/securityCenterServices/WEB_SECURITY_SCANNER",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/CLOUD_RUN_THREAT_DETECTION"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "modules": {
+      "ABUSE_SUDO_FOR_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ACCESS_SENSITIVE_FILES_ON_NODES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ADDED_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED",
+        "intendedEnablementState": "DISABLED"
+      },
+      "ADDED_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED",
+        "intendedEnablementState": "DISABLED"
+      },
+      "ADDED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ADDED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ADDED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ADDED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BASE64_ELF_FILE_CMDLINE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BASE64_ENCODED_PYTHON_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BASE64_ENCODED_SHELL_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUILT_IN_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUILT_IN_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "BUILT_IN_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "CONTAINER_ESCAPE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DETECT_MALICIOUS_CMDLINES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "DISABLE_OR_MODIFY_LINUX_AUDIT_SYSTEM": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FILELESS_EXECUTION_DETECTION_MEMFD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FILELESS_EXECUTION_DETECTION_SHM": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "FIND_GCP_CREDENTIALS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "GPG_KEY_RECONNAISSANCE": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "INGRESS_NIGHTMARE_VULNERABILITY_EXPLOITATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "KUBERNETES_ATTACK_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LAUNCH_CODE_COMPILER_TOOL_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LAUNCH_REMOTE_FILE_COPY_TOOLS_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "LOCAL_RECONNAISSANCE_TOOL_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MALICIOUS_PYTHON_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MALICIOUS_SCRIPT_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MALICIOUS_URL_OBSERVED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFIED_MALICIOUS_BINARY_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFIED_MALICIOUS_LIBRARY_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFIED_MALICIOUS_SKILL_EXECUTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFIED_MALICIOUS_SKILL_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "MODIFY_LD_SO_PRELOAD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "NETCAT_REMOTE_CODE_EXECUTION_IN_CONTAINER": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PAM_D_MODIFICATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PIPED_ENCODED_CODE_EXECUTION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PIPED_ENCODED_DOWNLOAD": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "POLKIT_LOCAL_PRIVILEGE_ESCALATION_VULNERABILITY": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "POSSIBLE_ARBITRARY_COMMAND_EXECUTION_THROUGH_CUPS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "POSSIBLE_REMOTE_COMMAND_EXECUTION_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "PROGRAM_RUN_WITH_DISALLOWED_HTTP_PROXY_ENV": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REMOVE_BULK_DATA_FROM_DISK": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REPORT_CLI_ARGUMENTS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REPORT_ENVIRONMENT_VARIABLES": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "REVERSE_SHELL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "ROOT_CERTIFICATE_INSTALLED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SEARCH_PRIVATE_KEYS_OR_PASSWORDS": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SOCAT_REVERSE_SHELL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "STEGANOGRAPHY_TOOL_DETECTED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUDO_POTENTIAL_PRIVILEGE_ESCALATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_CRON_MODIFICATION": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_CRYPTO_MINING_ACTIVITY_USING_STRATUM_PROTOCOL": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "SUSPICIOUS_OPENSSL_SHARED_OBJECT_LOADED": {
+        "effectiveEnablementState": "DISABLED"
+      },
+      "UNEXPECTED_CHILD_SHELL": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/CONTAINER_THREAT_DETECTION",
     "updateTime": "9999-12-31T23:59:59.999999999Z"
   },
   {
     "effectiveEnablementState": "DISABLED",
     "intendedEnablementState": "INHERITED",
-    "modules": {
-      "MALWARE_DISK_SCAN_YARA_AWS": {
-        "effectiveEnablementState": "DISABLED"
-      }
-    },
-    "name": "organizations/468955167232/locations/global/securityCenterServices/VM_THREAT_DETECTION_AWS"
-  },
-  {
-    "effectiveEnablementState": "DISABLED",
-    "intendedEnablementState": "INHERITED",
-    "modules": {
-      "CRYPTOMINING_HASH": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CRYPTOMINING_YARA": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "KERNEL_INTEGRITY_TAMPERING": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "KERNEL_MEMORY_TAMPERING": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "MALWARE_DISK_SCAN_YARA": {
-        "effectiveEnablementState": "DISABLED"
-      }
-    },
-    "name": "organizations/468955167232/locations/global/securityCenterServices/VM_THREAT_DETECTION",
-    "updateTime": "9999-12-31T23:59:59.999999999Z"
-  },
-  {
-    "effectiveEnablementState": "DISABLED",
-    "intendedEnablementState": "INHERITED",
-    "name": "organizations/468955167232/locations/global/securityCenterServices/AGENT_ENGINE_VULN_ASSESSMENT"
+    "name": "organizations/468955167232/locations/global/securityCenterServices/EC2_VULNERABILITY_ASSESSMENT"
   },
   {
     "effectiveEnablementState": "DISABLED",
@@ -717,26 +992,6 @@
   },
   {
     "effectiveEnablementState": "DISABLED",
-    "intendedEnablementState": "INHERITED",
-    "name": "organizations/468955167232/locations/global/securityCenterServices/AZURE_VULNERABILITY_ASSESSMENT"
-  },
-  {
-    "effectiveEnablementState": "DISABLED",
-    "intendedEnablementState": "INHERITED",
-    "name": "organizations/468955167232/locations/global/securityCenterServices/EC2_VULNERABILITY_ASSESSMENT"
-  },
-  {
-    "effectiveEnablementState": "DISABLED",
-    "intendedEnablementState": "INHERITED",
-    "name": "organizations/468955167232/locations/global/securityCenterServices/ARTIFACT_GUARD"
-  },
-  {
-    "effectiveEnablementState": "DISABLED",
-    "intendedEnablementState": "INHERITED",
-    "name": "organizations/468955167232/locations/global/securityCenterServices/NOTEBOOK_SECURITY_SCANNER"
-  },
-  {
-    "effectiveEnablementState": "DISABLED",
     "modules": {
       "EXTERNALLY_EXPOSED_API": {
         "effectiveEnablementState": "DISABLED"
@@ -757,9 +1012,15 @@
     "name": "organizations/468955167232/locations/global/securityCenterServices/EXTERNAL_EXPOSURE"
   },
   {
+    "effectiveEnablementState": "ENABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/GCE_VULNERABILITY_ASSESSMENT",
+    "updateTime": "2026-07-20T03:29:34.010088802Z"
+  },
+  {
     "effectiveEnablementState": "DISABLED",
     "intendedEnablementState": "INHERITED",
-    "name": "organizations/468955167232/locations/global/securityCenterServices/VM_MANAGER"
+    "name": "organizations/468955167232/locations/global/securityCenterServices/NOTEBOOK_SECURITY_SCANNER"
   },
   {
     "effectiveEnablementState": "DISABLED",
@@ -1538,312 +1799,51 @@
   },
   {
     "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/VM_MANAGER"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
     "modules": {
-      "ABUSE_SUDO_FOR_PRIVILEGE_ESCALATION": {
+      "CRYPTOMINING_HASH": {
         "effectiveEnablementState": "DISABLED"
       },
-      "ACCESS_SENSITIVE_FILES_ON_NODES": {
+      "CRYPTOMINING_YARA": {
         "effectiveEnablementState": "DISABLED"
       },
-      "ADDED_BINARY_EXECUTED": {
-        "effectiveEnablementState": "DISABLED",
-        "intendedEnablementState": "DISABLED"
-      },
-      "ADDED_LIBRARY_LOADED": {
-        "effectiveEnablementState": "DISABLED",
-        "intendedEnablementState": "DISABLED"
-      },
-      "ADDED_MALICIOUS_BINARY_EXECUTED": {
+      "KERNEL_INTEGRITY_TAMPERING": {
         "effectiveEnablementState": "DISABLED"
       },
-      "ADDED_MALICIOUS_LIBRARY_LOADED": {
+      "KERNEL_MEMORY_TAMPERING": {
         "effectiveEnablementState": "DISABLED"
       },
-      "ADDED_MALICIOUS_SKILL_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "ADDED_MALICIOUS_SKILL_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "BASE64_ELF_FILE_CMDLINE": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "BASE64_ENCODED_PYTHON_SCRIPT_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "BASE64_ENCODED_SHELL_SCRIPT_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "BUILT_IN_MALICIOUS_BINARY_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "BUILT_IN_MALICIOUS_SKILL_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "BUILT_IN_MALICIOUS_SKILL_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CONTAINER_ESCAPE": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "DETECT_MALICIOUS_CMDLINES": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "DISABLE_OR_MODIFY_LINUX_AUDIT_SYSTEM": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "FILELESS_EXECUTION_DETECTION_MEMFD": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "FILELESS_EXECUTION_DETECTION_SHM": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "FIND_GCP_CREDENTIALS": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "GPG_KEY_RECONNAISSANCE": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "INGRESS_NIGHTMARE_VULNERABILITY_EXPLOITATION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "KUBERNETES_ATTACK_TOOL_EXECUTION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "LAUNCH_CODE_COMPILER_TOOL_IN_CONTAINER": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "LAUNCH_REMOTE_FILE_COPY_TOOLS_IN_CONTAINER": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "LOCAL_RECONNAISSANCE_TOOL_EXECUTION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "MALICIOUS_PYTHON_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "MALICIOUS_SCRIPT_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "MALICIOUS_URL_OBSERVED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "MODIFIED_MALICIOUS_BINARY_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "MODIFIED_MALICIOUS_LIBRARY_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "MODIFIED_MALICIOUS_SKILL_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "MODIFIED_MALICIOUS_SKILL_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "MODIFY_LD_SO_PRELOAD": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "NETCAT_REMOTE_CODE_EXECUTION_IN_CONTAINER": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "PAM_D_MODIFICATION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "PIPED_ENCODED_CODE_EXECUTION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "PIPED_ENCODED_DOWNLOAD": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "POLKIT_LOCAL_PRIVILEGE_ESCALATION_VULNERABILITY": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "POSSIBLE_ARBITRARY_COMMAND_EXECUTION_THROUGH_CUPS": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "POSSIBLE_REMOTE_COMMAND_EXECUTION_DETECTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "PROGRAM_RUN_WITH_DISALLOWED_HTTP_PROXY_ENV": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "REMOVE_BULK_DATA_FROM_DISK": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "REPORT_CLI_ARGUMENTS": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "REPORT_ENVIRONMENT_VARIABLES": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "REVERSE_SHELL": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "ROOT_CERTIFICATE_INSTALLED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "SEARCH_PRIVATE_KEYS_OR_PASSWORDS": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "SOCAT_REVERSE_SHELL_DETECTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "STEGANOGRAPHY_TOOL_DETECTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "SUDO_POTENTIAL_PRIVILEGE_ESCALATION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "SUSPICIOUS_CRON_MODIFICATION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "SUSPICIOUS_CRYPTO_MINING_ACTIVITY_USING_STRATUM_PROTOCOL": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "SUSPICIOUS_OPENSSL_SHARED_OBJECT_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "UNEXPECTED_CHILD_SHELL": {
+      "MALWARE_DISK_SCAN_YARA": {
         "effectiveEnablementState": "DISABLED"
       }
     },
-    "name": "organizations/468955167232/locations/global/securityCenterServices/CONTAINER_THREAT_DETECTION",
+    "name": "organizations/468955167232/locations/global/securityCenterServices/VM_THREAT_DETECTION",
     "updateTime": "9999-12-31T23:59:59.999999999Z"
   },
   {
     "effectiveEnablementState": "DISABLED",
     "intendedEnablementState": "INHERITED",
     "modules": {
-      "CLOUD_RUN_ABUSE_SUDO_FOR_PRIVILEGE_ESCALATION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_ADDED_MALICIOUS_BINARY_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_ADDED_MALICIOUS_LIBRARY_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_ADDED_MALICIOUS_SKILL_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_ADDED_MALICIOUS_SKILL_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_BASE64_ELF_FILE_CMDLINE": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_BASE64_ENCODED_PYTHON_SCRIPT_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_BASE64_ENCODED_SHELL_SCRIPT_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_BUILT_IN_MALICIOUS_BINARY_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_BUILT_IN_MALICIOUS_SKILL_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_BUILT_IN_MALICIOUS_SKILL_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_CONTAINER_ESCAPE": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_DETECT_MALICIOUS_CMDLINES": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_FILELESS_EXECUTION_DETECTION_MEMFD": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_FIND_GCP_CREDENTIALS": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_GPG_KEY_RECONNAISSANCE": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_KUBERNETES_ATTACK_TOOL_EXECUTION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_LAUNCH_CODE_COMPILER_TOOL_IN_CONTAINER": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_LAUNCH_REMOTE_FILE_COPY_TOOLS_IN_CONTAINER": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_LOCAL_RECONNAISSANCE_TOOL_EXECUTION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_MALICIOUS_PYTHON_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_MALICIOUS_SCRIPT_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_MALICIOUS_URL_OBSERVED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_MODIFIED_MALICIOUS_BINARY_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_MODIFIED_MALICIOUS_LIBRARY_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_MODIFIED_MALICIOUS_SKILL_EXECUTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_MODIFIED_MALICIOUS_SKILL_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_NETCAT_REMOTE_CODE_EXECUTION_IN_CONTAINER": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_POLKIT_LOCAL_PRIVILEGE_ESCALATION_VULNERABILITY": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_POSSIBLE_ARBITRARY_COMMAND_EXECUTION_THROUGH_CUPS": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_POSSIBLE_REMOTE_COMMAND_EXECUTION_DETECTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_PROGRAM_RUN_WITH_DISALLOWED_HTTP_PROXY_ENV": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_REMOVE_BULK_DATA_FROM_DISK": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_REPORT_CLI_ARGUMENTS": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_REPORT_ENVIRONMENT_VARIABLES": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_REVERSE_SHELL": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_SEARCH_PRIVATE_KEYS_OR_PASSWORDS": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_SOCAT_REVERSE_SHELL_DETECTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_STEGANOGRAPHY_TOOL_DETECTED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_SUDO_POTENTIAL_PRIVILEGE_ESCALATION": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_SUSPICIOUS_CRYPTO_MINING_ACTIVITY_USING_STRATUM_PROTOCOL": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_SUSPICIOUS_OPENSSL_SHARED_OBJECT_LOADED": {
-        "effectiveEnablementState": "DISABLED"
-      },
-      "CLOUD_RUN_UNEXPECTED_CHILD_SHELL": {
+      "MALWARE_DISK_SCAN_YARA_AWS": {
         "effectiveEnablementState": "DISABLED"
       }
     },
-    "name": "organizations/468955167232/locations/global/securityCenterServices/CLOUD_RUN_THREAT_DETECTION"
+    "name": "organizations/468955167232/locations/global/securityCenterServices/VM_THREAT_DETECTION_AWS"
+  },
+  {
+    "effectiveEnablementState": "DISABLED",
+    "intendedEnablementState": "INHERITED",
+    "modules": {
+      "SCAN_FROM_STATIC_IP": {
+        "effectiveEnablementState": "DISABLED"
+      }
+    },
+    "name": "organizations/468955167232/locations/global/securityCenterServices/WEB_SECURITY_SCANNER",
+    "updateTime": "9999-12-31T23:59:59.999999999Z"
   }
 ]
