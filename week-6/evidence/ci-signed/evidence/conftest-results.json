@@ -1,0 +1,17 @@
+[
+	{
+		"filename": "week-1/evidence/plan.json",
+		"namespace": "compliance.ac3_gcp",
+		"successes": 2
+	},
+	{
+		"filename": "week-1/evidence/plan.json",
+		"namespace": "compliance.cm6_gcp",
+		"successes": 1
+	},
+	{
+		"filename": "week-1/evidence/plan.json",
+		"namespace": "compliance.sc28_gcp",
+		"successes": 1
+	}
+]
