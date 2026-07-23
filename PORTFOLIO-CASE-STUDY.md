@@ -31,7 +31,13 @@ The OSCAL profile claims fewer controls than the READMEs mention. That is delibe
 
 The subtraction is the point. Compliance-as-code is not about generating more claims faster; it is about making every claim falsifiable, and then only keeping the ones that survive.
 
-## Grading gate
+## What I would do next with more time
+
+Close the monitoring gap for real. The SCC Premium pay-as-you-go activation is accepted by the console but has not propagated to the subscription API at either org or project scope, and the entitlement-drift gate correctly refuses to call that done. When the tier actually flips, the sequence is already built: the gate exits 0 on a verified tier change, Security Health Analytics runs its first scan, the findings get captured through the same canonicalized path, signed, and vaulted, and SI-4/RA-5 move from the excluded list into the OSCAL profile with evidence behind them. Beyond that: extend the Week 3 CI gate to cover audit-log and org-policy drift, not just storage controls, and produce signed log-review evidence so AU-3/AU-6 can be claimed instead of excluded.
+
+## The one non-obvious thing that clicked
+
+Entitlement has a hierarchy, and a check that asserts the wrong layer produces verdicts that are true but useless. Subscription tier grants service entitlement, service entitlement grants scanner execution, and the console UI confirmed actions at every layer while the backing state moved at none of them. Three times in one week the interface said done and the API said otherwise. The fix was never more monitoring; it was asserting the highest layer the pipeline depends on and reporting the topmost mismatch. The click is not the control. The activation is not the entitlement. The record is not the shelf.
 
 | Check | Result | Where |
 |-------|--------|-------|

@@ -13,7 +13,7 @@ This is the [GRC Engineering Club](https://www.grcengclub.com/) pipeline challen
 | [Week 3](week-3/) | CI gate — GitHub Actions runs the three GCP policies on every PR, blocks violations | Complete |
 | [Week 4](week-4/) | Evidence you can trust — Cosign keyless signing + `verify-evidence.sh`, tamper test | Complete |
 | [Week 5](week-5/) | Turn on the cameras — Data Access audit logs + org policy (Terraform), SCC + entitlement drift gate (SHA absent from new Standard tier — detected, evidenced, signed) | Complete |
-| [Week 6](week-6/) | Speak the auditor's language — OSCAL component definition + profile (trestle VALID), evidence links to signed bundles, traversal proof, GCS evidence vault | In progress |
+| [Week 6](week-6/) | Speak the auditor's language — OSCAL component definition + profile (trestle VALID), evidence links to signed bundles, traversal proof, GCS evidence vault | Complete |
 
 Challenge close-out: [PORTFOLIO-CASE-STUDY.md](PORTFOLIO-CASE-STUDY.md) — the six weeks as a single narrative with the grading-gate evidence table.
 
